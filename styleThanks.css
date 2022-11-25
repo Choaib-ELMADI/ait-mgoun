@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+.thanks {
+    width: 100%;
+    height: 100vh;
+    background: #a1a6b4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.thankyou i {
+    font-size: 120px;
+    color: #3f4044;
+}
+
+.thanks a {
+    text-decoration: none;
+    background: #212230;
+    padding: 5px 10px;
+    color: orangered;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.thanks a:hover {
+    color: #e4e4e4;
+}
+
+@media screen and (max-width: 600px) {
+    .thanks {
+        height: 80vh;
+    }
+}

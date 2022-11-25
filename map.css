@@ -1,0 +1,210 @@
+.sub-header {
+    position: relative;
+    padding: 10vh 0;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(49, 162, 115, 0.4), rgba(49, 162, 115, 0.4)), url("pictures/map.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sub-header #nav {
+    font-size: 20px;
+    padding: 16px;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.95);
+    border-bottom: 0;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: #e4e4e4cb;
+}
+.span {
+    font-size: 18px;
+}
+.banner2 {
+    width: 25%;
+    transform: translateY(10px);
+}
+.sub-header .container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: #e4e4e4cb;
+}
+.sub-header .banner {
+    color: #e4e4e4cb;
+}
+.sub-header a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #e4e4e4cb;
+}
+
+
+.location {
+    background: #928d8d;
+    height: 110vh;
+    gap: 5%;
+}
+.location h1 {
+    font-size: 32px;
+}
+iframe {
+    box-shadow: 0 0 8px #333;
+    border-radius: 15px;
+}
+
+
+.ForCards {
+    padding: 2%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.ForCards .item {
+    text-align: center;
+    width: 180px;
+    height: 120px;
+    border: 1px solid black;
+    color: black;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.ForCards::-webkit-scrollbar {
+    display: none;
+}
+.item h2 {
+    padding: 0 10%;
+    font-size: 18px;
+    margin-top: 2%;
+}
+.item i {
+    padding: 1%;
+    color: black;
+}
+.item:nth-child(1) i {
+    color: rgb(218, 218, 40);
+}
+.item:nth-child(5) i {
+    color: rgb(61, 61, 219);
+}
+
+
+.QA {
+    width: 100%;
+    padding: 5% 0;
+    height: auto;
+    background: rgba(37, 48, 133, 0.5);
+}
+.Qcontainer {
+    width: 650px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Qcontainer h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: orangered;
+}
+.Qcontainer h1 span {
+    color: black;
+}
+.Qcontainer .q {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: #e4e4e4;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 6px black;
+    padding-bottom: 5px;
+}
+.Qcontainer .question {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-weight: 550;
+    font-size: 20px;
+}
+.Qcontainer .question .text {
+    text-transform: capitalize;
+    width: 95%;
+}
+.Qcontainer .hide {
+    display: none;
+}
+.Qcontainer button {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    border: 0;
+    outline: none;
+    background: transparent;
+    font-size: 26px;
+    font-weight: 700;
+    color: orangered;
+    cursor: pointer;
+}
+.Qcontainer .addAnswer {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+.Qcontainer .bar {
+    width: 90%;
+    margin: auto;
+    height: 2px;
+    background: orangered;
+}
+.Qcontainer .answer {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.Qcontainer .answer::first-letter {
+    color: orangered;
+    font-size: 30px;
+}
+
+footer {
+    height: auto;
+    padding-top: 0;
+}

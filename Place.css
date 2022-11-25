@@ -1,0 +1,344 @@
+.Place {
+    position: relative;
+    padding: 10vh 0;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tmd {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(255, 255, 255, 0)), url("pictures/tmd/tmdprof.jpg");
+}
+.tzh {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(255, 255, 255, 0)), url("pictures/map.jpeg");
+}
+.angh {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(255, 255, 255, 0)), url("pictures/map.jpeg");
+}
+.tkd {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(255, 255, 255, 0)), url("pictures/talkdid/tkdprof.jpg");
+}
+.Place #nav {
+    font-size: 20px;
+    padding: 16px;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.95);
+    border-bottom: 0;
+}
+.Place .container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: #e4e4e4cb;
+}
+.Place a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #e4e4e4cb;
+}
+.span {
+    font-size: 18px;
+}
+.Place h1 {
+    font-size: 40px;
+    color: #e4e4e4;
+    position: absolute;
+    left: 5%;
+    top: 40%;
+}
+
+
+.Place .search {
+    width: 40%;
+    height: auto;
+    background: #e4e4e471;
+    right: 5%;
+    top: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    position: absolute;
+    transition: 0.2s;
+    border-radius: 16px;
+}
+.suggests {
+    padding: 2%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background: #e4e4e471;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.search > :is(input:focus) ~ .suggests {
+    visibility: visible;
+    opacity: 1;
+}
+.suggest {
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: underline orangered;
+}
+.suggest:not(:last-child) {
+    margin-bottom: 2%;
+}
+.suggest:hover {
+    margin-left: 1%;
+    letter-spacing: 1px;
+}
+
+
+
+.search input {
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+.search input::placeholder {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+.btnSearch {
+    background: transparent;
+    text-decoration: none;
+    border: 0;
+    outline: none;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    cursor: pointer;
+}
+.searchGlass {
+    color: #333;
+}
+.Place .booking {
+    color: #333;
+    width: 15%;
+    height: auto;
+    padding: 2px 0;
+    border-radius: 50px;
+    background: #e4e4e471;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.Place .booking:hover {
+    color: #212230;
+}
+
+
+
+.PlaceContent {
+    padding: 2%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bigTitle {
+    font-size: 35px;
+    margin-bottom: 2%;
+    color: orangered;
+}
+.mainDesc {
+    width: 65%;
+    text-align: center;
+    color: #333;
+}
+.PicsContainer {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    gap: 2%;
+}
+.PicsContainer .pic {
+    box-shadow: 0 0 3px #333;
+    margin-top: 2%;
+    width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 5px;
+}
+.PicsContainer .pic img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.PicsContainer .pic:hover img {
+    transform: scale(1.1);
+}
+.picOver {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 0;
+    background: #212230be;
+    transition: 0.4s;
+}
+.picOver2 {
+    background: rgba(255, 68, 0, 0.5);
+}
+.PicsContainer .pic:hover > .picOver {
+    width: 100%;
+    height: 159px;
+}
+.picOver h1,
+.picOver h2 {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    color: #e4e4e4;
+    font-size: 18px;
+}
+.picOver h1 {
+    bottom: 28%;
+    font-size: 24px;
+}
+.PicsContainer .pic:hover > .picOver h1,
+.PicsContainer .pic:hover > .picOver h2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.ForCards {
+    padding: 2%;
+    max-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.ForCards .item {
+    text-align: center;
+    width: 180px;
+    height: 120px;
+    border: 1px solid black;
+    color: black;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.ForCards::-webkit-scrollbar {
+    display: none;
+}
+.item h2 {
+    padding: 0 10%;
+    font-size: 18px;
+    margin-top: 2%;
+}
+.item i {
+    padding: 1%;
+    color: black;
+}
+.item:nth-child(1) i {
+    color: rgb(218, 218, 40);
+}
+.item:nth-child(5) i {
+    color: rgb(61, 61, 219);
+}
+
+
+.placeInfo {
+    color: #212230;
+    padding: 1.5% 4%;
+}
+.under {
+    text-decoration: line-through orangered 2px;
+}
+.price {
+    color: orangered;
+}
+.stars {
+    padding: 0 4%;
+    display: flex;
+}
+.stars i {
+    cursor: pointer;
+    color: rgb(218, 218, 40);
+    font-size: 16px;
+}
+.stars h5 {
+    margin-left: 2%;
+}
+.cote {
+    color: red;
+    font-size: 18px;
+    font-weight: 900;
+    position: absolute;
+    bottom: 15%;
+    right: -8%;
+    transform: rotate(-90deg);
+}
+
+
+#placeFoot {
+    padding: 2%;
+}
+
+.placeMap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #928d8d;
+}
+.location {
+    background: #928d8d;
+    height: 110vh;
+    gap: 5%;
+}
+.location h1 {
+    font-size: 32px;
+}
+iframe {
+    box-shadow: 0 0 8px #333;
+    border-radius: 15px;
+}

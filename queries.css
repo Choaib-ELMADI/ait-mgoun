@@ -1,0 +1,556 @@
+@media screen and (max-width: 1100px) {
+    .explooreTop {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    /* Responsive Nav */
+    .incode {
+        font-size: 22px;
+    }
+    .nav-toggle {
+        display: flex;
+        position: absolute;
+        top: 18px;
+        right: 25px;
+    }
+    .nav-toggle:hover i {
+        color: orangered;
+    }
+    #nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 20px;
+        border-bottom: solid 1px white;
+    }
+    .links-container ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links-container ul li {
+        font-size: 18px;
+    }
+    .links-container {
+        display: none;
+     }
+    .links-container.active {
+        display: flex;
+    }
+    .mynav {
+        padding-bottom: 30px;
+    }
+
+    .explooreTop {
+        display: none;
+    }
+    .TheBlur {
+        filter: blur(4px);
+    }
+    .banner {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 950px) and (orientation: landscape) {
+    .HomeWave svg {
+        height: 40px;
+        transform: rotateY(0deg);
+    }
+    .nav-toggle {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+    }
+
+
+    .ServicesWave svg {
+        height: 40px;
+        transform: rotateY(0deg);
+    }
+    .FloatPics {
+        padding-top: 5%;
+    }
+    .cardWrap {
+        width: 120px;
+        height: 240px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .ball {
+        width: 120px;
+        height: 120px;
+        animation-delay: 0ms;
+    }
+    .shadow {
+        width: 70px;
+        height: 25px;
+        animation-delay: 0ms;
+    }
+    .pop {
+        font-size: 18px;
+        padding-bottom: 2px;
+    }
+    .TheCard {
+        width: 280px;
+        height: 350px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .exploore {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+        width: 400px;
+        height: auto;
+    }
+    .ass {
+        padding: 5% 8%;
+        display: flex;
+        margin-bottom: 25px;
+        width: 90%;
+        height: auto;
+    }
+    .AssInfo h2 {
+        font-size: 20px;
+        margin-top: 5%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .slider {
+        width: 80%;
+    }
+    .caption {
+        width: 94%;
+    }
+
+    /* Iminwarg Landscape */
+    .sub-header {
+        height: 100vh;
+    }
+    .banner2 {
+        width: 50%;
+    }
+    .ForCards {
+        margin: 5%;
+        padding: 2%;
+        gap: 15px;
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+    .ForCards .item {
+        min-width: 160px;
+        min-height: 110px;
+        padding: 0 1%;
+    }
+    .item h2 {
+        padding: 0;
+    }
+    .location {
+        width: 100%;
+        height: 100vh;
+        gap: 2%;
+    }
+    .location iframe {
+        width: 90%;
+        height: 90vh;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+
+    /* Place landscape */
+    .Place {
+        height: 100vh;
+    }
+    .Place .search {
+        border-radius: 10px;
+    }
+    .suggests {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .Place .booking {
+        width: 20%;
+    }
+    .bigTitle {
+        font-weight: 700;
+        margin-bottom: 4%;
+        font-size: 26px;
+    }
+    .mainDesc {
+        padding: 0% 3%;
+        font-size: 20px;
+        width: 100%;
+    }
+    .PicsContainer {
+        justify-content: space-evenly;
+    }
+    .PicsContainer .pic {
+        width: 300px;
+    }
+
+
+    /* Form landscape */
+    .contactForm {
+        height: auto;
+        padding: 2%;
+    }
+    form {
+        width: 70%;
+    }
+    form input, textarea {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .banner {
+        width: 80%;
+        transform: translateY(15%);
+    }
+}
+
+@media screen and (max-width: 626px) {
+    /* The Blur and Back Btn */
+    .TheBlur {
+        filter: blur(4px);
+    }
+    .scroll-top  {
+        bottom: 25px;
+        right: 20px;
+    }
+    .scroll-top i {
+        font-size: 18px;
+    }
+
+
+    /* Good Accueil */
+    .explooreTop {
+        display: none;
+    }
+    .banner {
+        width: 95%;
+        transform: translateY(-20%);
+    }
+    .banner .container h1 {
+        font-size: 28px;
+    }
+    .banner .container p {
+        font-size: 14px;
+    }
+    .exploreBtn {
+        font-size: 15px;
+        padding: 5px 8px;
+    }
+    .HomeWave svg {
+        height: 40px;
+        transform: rotateY(0deg);
+    }
+    .links-container ul li a {
+        font-size: 20px;
+    }
+
+
+    /* Responsive Nav */
+
+
+    /* About Section */
+    #About {
+        height: 90vh;
+    }
+    .slider {
+        width: 90%;
+        height: 80vh;
+    }
+    .caption {
+        width: 94%;
+    }
+    .caption .title {
+        font-size: 18px;
+        font-weight: 680;
+    }
+    .caption .description {
+        font-size: 16px;
+    }
+    #radio1:checked ~ #slide1 .caption,
+    #radio2:checked ~ #slide2 .caption,
+    #radio3:checked ~ #slide3 .caption,
+    #radio4:checked ~ #slide4 .caption,
+    #radio5:checked ~ #slide5 .caption {
+        top: 2%;
+    }
+
+
+    /* Services Section */
+    .ServicesWave svg {
+        height: 40px;
+        transform: rotateY(0deg);
+    }
+    .FloatPics {
+        padding-top: 5%;
+        gap: 5%;
+    }
+    .cardWrap {
+        height: 240px;
+    }
+    .cardWrap:nth-child(3),
+    .cardWrap:nth-child(4) {
+        margin-bottom: 20px;
+    }
+    .ball {
+        width: 120px;
+        height: 120px;
+        animation-delay: 0ms;
+    }
+    .shadow {
+        width: 70px;
+        height: 25px;
+        animation-delay: 0ms;
+    }
+    .pop {
+        font-size: 18px;
+        padding-bottom: 2px;
+    }
+
+
+    /* Tours Section */
+
+
+    /* Follow Section */
+    .footerCards {
+        display: flex;
+        flex-direction: column;
+    }
+    .d2 {
+        background: #e4e4e4;
+        color: orangered;
+    }
+    .d2 h2 {
+        font-size: 20px;
+    }
+    .d0 h3 {
+        font-size: 19px;
+    }
+    .d3 h4 {
+        font-size: 14px;
+    }
+    .exploore, .ass {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+        width: 310px;
+        height: auto;
+    }
+    .AssInfo h2 {
+        font-size: 20px;
+        margin-top: 5%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .AssInfo .social-icons {
+        margin-bottom: 25px;
+    }
+    .AssInfo .social-icons i {
+        font-size: 26px;
+    }
+    .sponsor {
+        bottom: 2%;
+    }
+    footer {
+        padding: 6% 0;
+    }
+
+
+    /* Iminwarg Page */
+    .sub-header {
+        height: 50vh;
+        width: 100%;
+    }
+    .sub-header #nav,
+    .Place #nav {
+        padding: 11px;
+        font-size: 18px;
+    }
+    .banner2 {
+        width: 70%;
+        transform: translateY(10%);
+    }
+    .ForCards {
+        margin: 5%;
+        padding: 2%;
+        gap: 15px;
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+    .ForCards .item {
+        min-width: 160px;
+        min-height: 110px;
+        padding: 0 1%;
+    }
+    .item h2 {
+        padding: 0;
+    }
+
+
+
+    .Qcontainer {
+        width: 95%;
+    }
+    .Qcontainer .q {
+        border-radius: 10px;
+        box-shadow: 0 0 4px #333;
+    }
+    .Qcontainer .question {
+        position: relative;
+        line-height: 26px;
+    }
+    .Qcontainer .question button {
+        position: absolute;
+        top: 3px;
+        right: 10px;
+    }
+    .Qcontainer .question .text {
+        font-size: 18px;
+        width: 88%;
+        text-align: justify;
+        line-height: 22px;
+    }
+    .Qcontainer .answer {
+        width: 90%;
+        font-size: 18px;
+        text-align: justify;
+    }
+    .Qcontainer .answer::first-letter {
+        font-size: 30px;
+        color: orangered;
+    }
+    .Qcontainer .bar {
+        width: 100%;
+        background: orangered;
+    }
+
+
+
+
+    .location {
+        width: 100%;
+        height: 90vh;
+        gap: 2%;
+    }
+    .location iframe {
+        width: 90%;
+        height: 80vh;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .Qcontainer h1, .location h1 {
+        font-size: 26px;
+    }
+
+
+    /* Place Page */
+    .Place span,
+    .sub-header span {
+        font-size: 16px;
+    }
+    .Place h1 {
+        font-size: 35px;
+        top: 45%;
+    }
+    .Place {
+        height: 50vh;
+    }
+    .Place .search {
+        padding: 0 2%;
+        width: 55%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .search input {
+        font-size: 16px;
+        font-weight: 550;
+    }
+    .search input::placeholder {
+        font-size: 16px;
+        font-weight: 550;
+    }
+    .btnSearch {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .searchGlass {
+        font-size: 18px;
+    }
+    .Place .booking {
+        width: 28%;
+        height: auto;
+        font-size: 16px;
+    }
+    .bigTitle {
+        font-weight: 700;
+        margin-bottom: 4%;
+        font-size: 24px;
+    }
+    .mainDesc {
+        padding: 0% 3%;
+        font-size: 18px;
+        width: 100%;
+    }
+    .suggests {
+        padding-top: 4%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }    
+    .suggest:not(:last-child) {
+        margin-bottom: 3%;
+    }
+    .suggest {
+        font-size: 15px;
+    }
+    .PicsContainer .pic {
+        width: 320px;
+        height: auto;
+        margin-bottom: 1%;
+        padding-bottom: 8px;
+    }
+    .PicsContainer .pic img {
+        height: 150px;
+    }
+    .picOver h1,
+    .picOver h2 {
+        font-size: 16px;
+    }
+    .picOver h1 {
+        font-size: 22px;
+    }
+    .placeInfo {
+        padding: 4%;
+    }
+    #placeFoot {
+        padding: 5%;
+    }
+
+
+    /* Contact Form */
+    form {
+        width: 90%;
+    }
+    form input, textarea {
+        width: 85%;
+        box-shadow: 0 0 2px #333;
+    }
+    form h2 {
+        font-size: 24px;
+    }
+    form button {
+        letter-spacing: 1px;
+    }
+}

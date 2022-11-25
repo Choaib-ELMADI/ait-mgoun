@@ -1,0 +1,126 @@
+#About {
+    width: 100%;
+    height: 100vh;
+    background: #928d8d;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 0 6px #333;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.caption {
+    width: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 4px 8px;
+    border-radius: 10px;
+    position: absolute;
+    top: -100%;
+    left: 3%;
+    transition: 0.5s;
+}
+
+.caption .title {
+    color: orangered;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.caption .description {
+    text-transform: capitalize;
+    color: #e4e4e4;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.dots {
+    width: 150px;
+    padding: 2px 4px;
+    height: auto;
+    background: rgba(51, 51, 51, 0.8);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dots label {
+    height: 20px;
+    width: 20px;
+    background: rgba(255, 68, 0, 0.4);
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.dots label:hover {
+    background: orangered;
+}
+
+#radio1:checked ~ #slide1,
+#radio2:checked ~ #slide2,
+#radio3:checked ~ #slide3,
+#radio4:checked ~ #slide4,
+#radio5:checked ~ #slide5 {
+    opacity: 1;
+}
+
+#radio1:checked ~ #slide1 img,
+#radio2:checked ~ #slide2 img,
+#radio3:checked ~ #slide3 img,
+#radio4:checked ~ #slide4 img,
+#radio5:checked ~ #slide5 img {
+    transform: scale(1);
+}
+
+#radio1:checked ~ #slide1 .caption,
+#radio2:checked ~ #slide2 .caption,
+#radio3:checked ~ #slide3 .caption,
+#radio4:checked ~ #slide4 .caption,
+#radio5:checked ~ #slide5 .caption {
+    top: 3%;
+}
+
+#radio1:checked ~ .dots #label1 ,
+#radio2:checked ~ .dots #label2 ,
+#radio3:checked ~ .dots #label3 ,
+#radio4:checked ~ .dots #label4 ,
+#radio5:checked ~ .dots #label5 {
+    background: orangered;
+}

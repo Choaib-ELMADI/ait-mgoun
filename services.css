@@ -1,0 +1,174 @@
+#Services {
+    background: orangered;
+    position: relative;
+    height: auto;
+    padding: 5% 0;
+}
+
+.ServicesContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FloatPics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10%;
+    transform: translateY(10%);
+}
+
+.cardWrap {
+    height: 350px;
+    width: 160px;
+}
+
+.FloatPic {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ball {
+    animation: float 3.8s ease-in-out infinite;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 6px #333;
+    cursor: pointer;
+}
+
+.ball1 {
+    background-image: url("pictures/floating/lanature.jpg");
+}
+.ball2 {
+    background-image: url("pictures/floating/nightcamp.jpg");
+    animation-delay: 1s;
+}
+.ball3 {
+    background-image: url("pictures/floating/amande.jpg");
+    animation-delay: 1.5s;
+}
+.ball4 {
+    background-image: url("pictures/floating/tassaoutcamp.jpg");
+    animation-delay: 2s;
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.shadow {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30%;
+    animation: expand 4s infinite;
+    box-shadow: 0 0 5px #333;
+}
+.sh2 {
+    animation-delay: 1s;
+}
+.sh3 {
+    animation-delay: 1.5s;
+}
+.sh4 {
+    animation-delay: 2s;
+}
+
+@keyframes expand {
+    0%,
+    100% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+
+.pop {
+    width: 105%;
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 8px;
+    padding-bottom: 6px;
+    background: rgba(0, 0, 0);
+    color: #e4e4e4;
+    border: 1px solid #e4e4e4;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.pop::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 0, 0);
+    transform: rotate(45deg);
+    z-index: -1;
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+}
+
+.ball1:hover  .pop1,
+.ball2:hover  .pop2,
+.ball3:hover  .pop3,
+.ball4:hover  .pop4 {
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.ServicesWave {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.ServicesWave svg {
+    position: relative;
+    display: block;
+    width: calc(120% + 46px);
+    height: 40px;
+    transform: rotateY(180deg);
+}
+
+.ServicesWave .shape-fill {
+    fill: #1b1b25;
+}
