@@ -125,15 +125,14 @@ span {
 .links-container ul li a {
     text-decoration: none;
     color: white;
-    font-size: 23px;
-    font-weight: 600;
-    letter-spacing: 2px;
+    font-size: 20px;
+    letter-spacing: 1px;
     display: block;
 }
 .links-container ul li:after {
     display: block;
     content: '';
-    border-bottom: solid 3.5px orangered;
+    border-bottom: solid 3px orangered;
     padding-bottom: 1px;
     transform: scaleX(0);
     transition: transform 300ms ease-in-out;
